@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <title>2D Transformation DEMO</title>
+</head>
+<body>
+    <div id="shape2"></div>
+    <div id="shape">
+        <div class="circle" id="Left_ear"></div>
+        <div class="circle" id="right_ear"></div>
+        <div class="circle" id="face">
+            <div class="rectangle"id="right_eye"></div>
+            <div class="rectangle"id="left_eye"></div>
+            <div class="triangle"></div>
+        </div>
+    </div>
+    <label for="trans">Choose the transformation:</label>
+    <select name="trans" id="trans" >
+        <option disabled selected value> -- select an option -- </option>
+      <option value="transX">translation in x direction</option>
+      <option value="transY">translation in y direction</option>
+      <option value="rotation">rotation</option>
+      <option value="scale">scaling</option>
+    </select>
+    
+    
+    
+    <script src="../static/js/index.js"></script>
+</body>
+</html>
