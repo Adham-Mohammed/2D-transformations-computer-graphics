@@ -18,6 +18,14 @@
             <div class="triangle"></div>
         </div>
     </div>
+    <label for="shapes">Select a shape:</label>
+    <select name="shapes" id="shapes" >
+        <option disabled selected value> -- select an option -- </option>
+      <option value="circle">translation in x direction</option>
+      <option value="triangle">translation in y direction</option>
+      <option value="rectangle">rotation</option>
+      <option value="square">scaling</option>
+    </select>
     <label for="trans">Choose the transformation:</label>
     <select name="trans" id="trans" >
         <option disabled selected value> -- select an option -- </option>
@@ -26,6 +34,18 @@
       <option value="rotation">rotation</option>
       <option value="scale">scaling</option>
     </select>
+    <div id="enterData">
+        <label>Enter the value:</label>
+        <input type="number" id="valuex">
+        <br>
+        <label>Enter the value:</label>
+        <input type="number" id="valuex">
+        <br>
+        <button id='apply'>Apply</button>
+        <button id='rest'>Rest</button>
+        
+    </div>
+    <canvas id="tutorial" width="150" height="150">canvas</canvas>
     
     
     
