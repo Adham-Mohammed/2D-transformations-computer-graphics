@@ -21,10 +21,10 @@
     <label for="shapes">Select a shape:</label>
     <select name="shapes" id="shapes" >
         <option disabled selected value> -- select an option -- </option>
-      <option value="circle">translation in x direction</option>
-      <option value="triangle">translation in y direction</option>
-      <option value="rectangle">rotation</option>
-      <option value="square">scaling</option>
+      <option value="circle">circle</option>
+      <option value="triangle">triangle</option>
+      <option value="rectangle">rectangle</option>
+      <option value="mikymouse">Mickey Mouse</option>
     </select>
     <label for="trans">Choose the transformation:</label>
     <select name="trans" id="trans" >
@@ -35,11 +35,11 @@
       <option value="scale">scaling</option>
     </select>
     <div id="enterData">
-        <label>Enter the value:</label>
-        <input type="number" id="valuex">
+        <label>Enter the X-value:</label>
+        <input type="number" id="valuex", placeholder="X">
         <br>
-        <label>Enter the value:</label>
-        <input type="number" id="valuex">
+        <label>Enter the Y-value:</label>
+        <input type="number" id="valuey", placeholder="Y">
         <br>
         <button id='apply'>Apply</button>
         <button id='rest'>Rest</button>
