@@ -8,44 +8,38 @@
     <title>2D Transformation DEMO</title>
 </head>
 <body>
-    <div id="shape2"></div>
-    <div id="shape">
-        <div class="circle" id="Left_ear"></div>
-        <div class="circle" id="right_ear"></div>
-        <div class="circle" id="face">
-            <div class="rectangle"id="right_eye"></div>
-            <div class="rectangle"id="left_eye"></div>
-            <div class="triangle"></div>
+    <div class="field" id="field">
+        <div id="shape">
+            <div class="circle" id="Left_ear"></div>
+            <div class="circle" id="right_ear"></div>
+            <div class="circle" id="face">
+                <div class="rectangle"id="right_eye"></div>
+                <div class="rectangle"id="left_eye"></div>
+                <div class="triangle"></div>
+            </div>
+    </div>
+    </div>
+    <div class="form">
+        <label for="shapes">Select a shape:</label>
+        <select name="shapes" id="shapes" >
+            <option disabled selected value> -- select an option -- </option>
+        <option value="circle">circle</option>
+        <option value="triangle">triangle</option>
+        <option value="rectangle">rectangle</option>
+        <option value="mikymouse">Mickey Mouse</option>
+        </select>
+        <div class="inputs">
+            <input class="up" type="number" placeholder="Y">
+            <input class="left" type="number" placeholder="X">
+            <button class="transformButton">transform</button>
+            <input class="rotate" type="number" placeholder="rotate value">
+            <button class="rotatingButton">rotate</button>
+            <input class="scaleX" type="number" placeholder="scale in X">
+            <input class="scaleY" type="number" placeholder="scale in Y">
+            <button class="scalingButton">scale</button>
         </div>
     </div>
-    <label for="shapes">Select a shape:</label>
-    <select name="shapes" id="shapes" >
-        <option disabled selected value> -- select an option -- </option>
-      <option value="circle">circle</option>
-      <option value="triangle">triangle</option>
-      <option value="rectangle">rectangle</option>
-      <option value="mikymouse">Mickey Mouse</option>
-    </select>
-    <label for="trans">Choose the transformation:</label>
-    <select name="trans" id="trans" >
-        <option disabled selected value> -- select an option -- </option>
-      <option value="transX">translation in x direction</option>
-      <option value="transY">translation in y direction</option>
-      <option value="rotation">rotation</option>
-      <option value="scale">scaling</option>
-    </select>
-    <div id="enterData">
-        <label>Enter the X-value:</label>
-        <input type="number" id="valuex", placeholder="X">
-        <br>
-        <label>Enter the Y-value:</label>
-        <input type="number" id="valuey", placeholder="Y">
-        <br>
-        <button id='apply'>Apply</button>
-        <button id='rest'>Rest</button>
-        
-    </div>
-    <canvas id="tutorial" width="150" height="150">canvas</canvas>
+
     
     
     
