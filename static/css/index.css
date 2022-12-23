@@ -4,10 +4,8 @@ body{
     font-size: large;
 }
 .inputs{
-    position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     
 }
 input[type=number] {
@@ -83,17 +81,6 @@ select{
     right: 13%;
 
 }
-/* button{
-    border-radius: 10px; 
-    margin: 10px;
-    font-weight: 500;
-    font-size: medium;
-    align-items: center;
-    position: relative;
-    left: 10%;   
-    cursor: pointer;
-    box-shadow: 1px 1px 5px #aaaaaa;
-} */
 
 #enterData{
     margin-top: 10px;
@@ -106,11 +93,16 @@ button {
     transition-duration: 0.4s;
     background-color: #f44336;
     border-color: #f44336;
+    cursor: pointer;
   }
   
 button:hover {
     background-color: #b43128;
     border-color: #b43128;
-    
     color: white;
   }
+
+
+#rest{
+   margin-left: 100px;
+}
