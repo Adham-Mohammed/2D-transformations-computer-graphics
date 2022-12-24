@@ -19,67 +19,75 @@ select{
     font-weight: 100;
     font-size: medium;
 }
-#shape{
+.center{
     width: 200px;
     height: 200px;
     position: fixed;
     left: 43%;
     top: 37%;
-   
 }
-
-.circle{
+#face{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 3px solid black;
-    display: inline-block;
-}
-.triangle{
-    width: 0;
-    border: 20px solid transparent;
-    border-top: 10px solid black;
-    display: inline-block;
-    position: absolute;
-    top: 75%;
-    right: 30%;
-}
-.rectangle{
-    width: 10px;
-    height: 20px;
-    background-color:black ;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-}
-#right_eye{
-    position: absolute;
-    left: 60%;
-}
-
-#face{
     background-color: bisque;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 30%;
+    right: 23%;
 
 }
 #Left_ear{
     width: 34px;
     height: 34px;
     background-color: black;
+    border-radius: 50%;
+    border: 3px solid black;
     position: absolute;
-    top: 16%;
-    right: 63%;
+    top: 18%;
+    right: 61%;
+    transform-origin: 65px 79px;
 }
 #right_ear{
     width: 34px;
     height: 34px;
     background-color: black;
+    border-radius: 50%;
+    border: 3px solid black;
     position: absolute;
-    top: 16%;
-    right: 13%;
+    top: 18%;
+    right: 18%;
+    transform-origin: -24px 80px;
 
+}
+#right_eye{
+    width: 10px;
+    height: 20px;
+    background-color:black ;
+    position: absolute;
+    top: 42%;
+    left: 58%;
+    transform-origin: -20px 30px;
+    
+}
+#left_eye{
+    width: 10px;
+    height: 20px;
+    background-color:black ;
+    position: absolute;
+    top: 42%;
+    left: 38%;
+    transform-origin: 20px 30px;
+}
+#mouth{
+    width: 0;
+    border: 20px solid transparent;
+    border-top: 10px solid black;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    right: 39%;
+    transform-origin: 20px -5px;
 }
 
 #enterData{
